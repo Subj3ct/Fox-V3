@@ -327,7 +327,6 @@ class PlantTycoon(commands.Cog):
                 title=title, description=description.format(prefix), color=discord.Color.green()
             )
             em.set_thumbnail(url="https://image.prntscr.com/image/AW7GuFIBSeyEgkR2W3SeiQ.png")
-            )
             await ctx.send(embed=em)
 
     @commands.cooldown(1, 60 * 10, commands.BucketType.user)
