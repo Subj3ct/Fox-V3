@@ -321,7 +321,7 @@ class PlantTycoon(commands.Cog):
             ``{0}shovel``: Shovel your plant out.\n
             ``{0}water``: Water your plant.\n
             ``{0}fertilize``: Fertilize the soil.\n
-            ``{0}prune``: Prune your plant.\n"""
+            ``{0}gprune``: Prune your plant.\n"""
 
             em = discord.Embed(
                 title=title, description=description.format(prefix), color=discord.Color.green()
@@ -690,7 +690,7 @@ class PlantTycoon(commands.Cog):
             await self._add_health(channel, gardener, product, product_category)
 
     @commands.command(name="prune")
-    async def _prune(self, ctx):
+    async def _gprune(self, ctx):
         """Prune your plant."""
         gardener = await self._gardener(ctx.author)
         try:
