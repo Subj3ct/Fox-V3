@@ -327,8 +327,6 @@ class PlantTycoon(commands.Cog):
                 title=title, description=description.format(prefix), color=discord.Color.green()
             )
             em.set_thumbnail(url="https://image.prntscr.com/image/AW7GuFIBSeyEgkR2W3SeiQ.png")
-            em.set_footer(
-                text="This cog was made by SnappyDragon18 and PaddoInWonderland. Inspired by The Lorax (2012)."
             )
             await ctx.send(embed=em)
 
