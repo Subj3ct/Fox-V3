@@ -689,7 +689,7 @@ class PlantTycoon(commands.Cog):
         else:
             await self._add_health(channel, gardener, product, product_category)
 
-    @commands.command(name="prune")
+    @commands.command(name="gprune")
     async def _gprune(self, ctx):
         """Prune your plant."""
         gardener = await self._gardener(ctx.author)
