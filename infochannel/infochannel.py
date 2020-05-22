@@ -173,7 +173,7 @@ class InfoChannel(Cog):
         # Gets count of actual users
         total = lambda x: not x.bot
         num = len([m for m in guild.members if total(m)])
-        human_msg = f"Members: {num}"
+        human_msg = f"♡︎ ; {num}"
 
         channel_id = guild_data["channel_id"]
         if channel_id is None:
